@@ -7,12 +7,6 @@ namespace Application
     {
         static void Main(string[] args)
         {
-            var dir = new DirectoryInfo(@"C:\LogTest");
-            foreach (var file in dir.GetFiles())
-            {
-                file.Delete();
-            }
-
             var logger1 = StartLogger();
 
             for (int i = 0; i < 15; i++)
