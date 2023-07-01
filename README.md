@@ -1,4 +1,4 @@
-# Et par ord om hvad der er fixet og ændret
+# Et par ord om, hvad der er fixet og ændret
 ## Bugs
 1. AsyncLogger.cs - linje 51
    Der bliver itereret direkte på _line objected som undervejs i loopet ændrer sig. Dette virker ikke og der er derfor .ToArray() på den for at kopiere til et array som der loopes på i stedet for.
