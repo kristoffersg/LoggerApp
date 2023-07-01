@@ -16,5 +16,5 @@
 * Generelt er der lavet lidt navneændringer rundt omkring
   - LogInterface -> IAsyncLogger
   - AsyncLogInterface -> AsyncLogger
-  - "_" er fjernet fra diverse metoder
+  - "_" er fjernet fra diverse metodenavne
   - this. er fjernet fra fields da der også bruges "_"
