@@ -8,7 +8,7 @@
 ## Generelle ændringer
 * private fields i AsyncLogger.cs er alle flytte samlet til toppen af klassen.
 * Constructoren i AsyncLogger.cs er lavet mere clan og indeholder nu kun DI.
-* DateTime.Now er abstraheret.cs væk, for at kunne mock den for at fake datoændring
+* DateTime.Now er abstraheret.cs væk til SystemClock.cs og ISystemClock, for at kunne mock den for at fake datoændring
 * CreateNewFile() i AsyncLogger.cs er lavet for at gøre koden mere læselig, og for ikke at have ens kode flere steder
 * CheckDate() i AsyncLogger.cs er også lavet for at gøre kode mere let læselig
 * StartLogger() i Program.cs er tilfæjet for at kunne start tasks herfra. Dette er gjort for at kunne gribe exceptions fra main thread. Hertil er ExceptionHandler lavet for at gribe exceptions fra Tasks
